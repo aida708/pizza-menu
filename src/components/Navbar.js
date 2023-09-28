@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Pizza from "../assets/pizza-logo.png";
+import Pizza from "../assets/pizzaLogo.png";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import ReorderIcon from "@mui/icons-material/Reorder";
@@ -17,6 +17,7 @@ function Navbar() {
 
       <div className="leftside" id={openLinks ? "open" : "close"}>
         <img src={Pizza} className="logo" />
+
         <div className="hiddenLinks">
           <Link to="/">Home</Link>
           <Link to="/menu">Menu</Link>
@@ -26,14 +27,16 @@ function Navbar() {
       </div>
 
       <div className="rightside">
-        <Link to="/">Home </Link>
-        <Link to="/menu">Menu </Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <div className="nav-buttons">
+          <Link to="/">Home </Link>
+          <Link to="/menu">Menu </Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
 
-        <button>
-          <ReorderIcon />
-        </button>
+          <button>
+            <ReorderIcon />
+          </button>
+        </div>
       </div>
     </div>
   );

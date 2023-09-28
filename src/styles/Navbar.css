@@ -1,32 +1,44 @@
+.img {
+  background-size: 10px;
+}
+
+.logo {
+  max-width: 100px; /* Set the maximum width of the image */
+  height: auto; /* This ensures the image scales proportionally */
+  display: block; /* Remove any extra space around the image */
+  margin: 0 auto; /* Center the image horizontally within its container */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px; /* Add spacing between buttons */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
 .navbar {
   width: 100%;
   height: 100px;
   background-color: #121619;
   display: flex;
   flex-direction: row;
-}
-.logo {
-  width: 75px; /* Set your desired width */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 10px;
-  padding-left: 100px;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .navbar .leftSide {
-  flex: 50%;
+  flex: 20%;
   height: 100%;
   display: flex;
   align-items: center;
+  padding-left: 100px;
 }
 
 .navbar .leftSide img {
-  width: 70px;
-  display: flex;
-  align-items: center;
-  height: auto;
-  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 
 .navbar .rightSide {
@@ -34,6 +46,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  padding-right: 100px;
   justify-content: center;
 }
 
@@ -43,7 +56,6 @@
   margin: 20px;
 }
 
-/* to make it responsive: */
 .navbar .rightSide button {
   background-color: transparent;
   border: none;

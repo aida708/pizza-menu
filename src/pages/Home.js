@@ -5,11 +5,16 @@ import "../styles/Home.css";
 
 function Home() {
   return (
-    <div className="home">
-      <div
-        className="headerContainer"
-        style={{ background: `url(${BannerImage})` }}
-      >
+    <div
+      className="home"
+      style={{
+        background: `url(${BannerImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+      }}
+    >
+      <div className="headerContainer">
         <h1>Aida's Pizzeria</h1>
         <p>Delicious Pizza</p>
 
